@@ -113,7 +113,7 @@ export default function ProductForm({
       <select value={category} onChange={(ev) => setCategory(ev.target.value)}>
         <option value="">Uncategorized</option>
         {categories.length > 0 &&
-          categories.map((c) => <option value={c._id}> {c.name} </option>)}
+          categories.map((c) => <option key={c._id} value={c._id}> {c.name} </option>)}
       </select>
       {categoriedLoading && (
         <Load/>
