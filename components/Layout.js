@@ -8,16 +8,28 @@ export default function Layout({ children }) {
   const { data: session } = useSession();
   if (!session) {
     return (
-      <div className="bg-bgGray w-screen h-screen flex items-center">
-        <div className="text-center w-full">
-          <button
-            onClick={() => signIn("google")}
-            className="bg-white p-2 px-4 rounded-lg"
-          >
-            Login with Google
-          </button>
-        </div>
-      </div>
+<div className="bg-primary w-screen h-screen flex flex-col justify-center items-center text-white font-tillana">
+  <img
+    src="/coffee.png"
+    className="w-12.5 h-12.5 self-center mb-4"
+    style={{
+      filter: "brightness(0) invert(1)",
+    }}
+    alt="Coffee Icon"
+  />
+  <div className="text-center w-full">
+    <button
+      onClick={() => signIn("google")}
+      className="bg-transparent border-[1px] border-[solid] border-[#fff] p-3 px-16 rounded-lg text-white"
+    >
+      Login with Google
+    </button>
+  </div>
+</div>
+
+
+
+
     );
   }
   return (

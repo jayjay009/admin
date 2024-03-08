@@ -45,7 +45,9 @@ export default function OrderPage() {
                 <td>
                   {order.name} {order.email}
                   <br />
-                  {order.city} {order.postalCode}
+                  {order.city}
+                  <br />
+                   {order.postalCode}
                   {order.country}
                   <br />
                   {order.streetAddress}

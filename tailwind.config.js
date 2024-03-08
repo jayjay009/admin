@@ -8,9 +8,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#5542F6",
-        highlight: "#eae8fb",
+        primary: "#714423",
+        highlight: '#bfa795',
         bgGray: "#e8e8e8",
+      },
+      fontFamily:{
+        tillana:["Tillana", "sans-serif"],
       },
     },
   },
