@@ -45,12 +45,12 @@ export default function OrderPage() {
                 <td>
                   {order.name} {order.email}
                   <br />
-                  {order.city}
+                  {order.course}
                   <br />
-                   {order.postalCode}
-                  {order.country}
+                   {order.yearLevel}
+                  {order.room}
                   <br />
-                  {order.streetAddress}
+                  {order.number}
                 </td>
                 <td>
                   {order.line_items.map((l) => (
